@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Citas Médicas</title>
+    <script src="atm.js" defer></script>
+</head>
+<body>
+    <h1>Sistema de Gestión de Citas Médicas</h1>
+
+    <div>
+        <h2>Programar Cita Médica</h2>
+        <label for="nombrePaciente">Nombre del Paciente:</label>
+        <input type="text" id="nombrePaciente" placeholder="Nombre">
+        <br>
+        <label for="fechaCita">Fecha de la Cita:</label>
+        <input type="date" id="fechaCita">
+        <br>
+        <label for="horaCita">Hora de la Cita:</label>
+        <input type="time" id="horaCita">
+        <br>
+        <label for="medicoAsignado">Médico Asignado:</label>
+        <input type="text" id="medicoAsignado" placeholder="Nombre del Médico">
+        <br>
+        <button id="programarCita">Programar Cita</button>
+    </div>
+
+    <h2>Citas Programadas</h2>
+    <div id="listaCitas"></div>
+
+    <div>
+        <h2>Cancelar Cita</h2>
+        <label for="cancelarNombrePaciente">Nombre del Paciente para Cancelar:</label>
+        <input type="text" id="cancelarNombrePaciente" placeholder="Nombre">
+        <br>
+        <button id="cancelarCita">Cancelar Cita</button>
+    </div>
+</body>
+</html>

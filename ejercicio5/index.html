@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <script src="atm.js" defer></script>
+</head>
+<body>
+    <h1>Simulación de Carrito de Compras</h1>
+
+    <div>
+        <h2>Productos Disponibles</h2>
+        <select id="productos">
+            <!-- Estos productos se pueden ampliar o cambiar según sea necesario -->
+            <option value="0">Seleccionar producto</option>
+            <option value="1">Laptop - $1500</option>
+            <option value="2">Celular - $800</option>
+            <option value="3">Tablet - $400</option>
+        </select>
+        <input type="number" id="cantidad" min="1" placeholder="Cantidad">
+        <button id="agregarProducto">Agregar al Carrito</button>
+    </div>
+
+    <h2>Carrito de Compras</h2>
+    <div id="carrito"></div>
+    <p id="total">Total de la Compra: $0</p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático Simulación</title>
+    <script src="atm.js" defer></script>
+</head>
+<body>
+    <h1>Simulación de Cajero Automático</h1>
+    <div id="login">
+        <label for="documento">Documento de Identidad:</label>
+        <input type="text" id="documento" required>
+        <br><br>
+        <label for="pin">PIN (4 dígitos):</label>
+        <input type="password" id="pin" maxlength="4" required>
+        <br><br>
+        <button onclick="validarCliente()">Iniciar Sesión</button>
+    </div>
+    <div id="menu" style="display:none;">
+        <h2>Menú del Cajero</h2>
+        <button onclick="retirar()">Retirar</button>
+        <button onclick="depositar()">Depositar</button>
+        <button onclick="transferir()">Transferir</button>
+        <button onclick="consultarSaldo()">Consultar Saldo</button>
+        <button onclick="salir()">Salir</button>
+    </div>
+    <div id="resultados"></div>
+</body>
+</html>

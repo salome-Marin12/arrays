@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Atención Universidad</title>
+    <!-- Aquí enlazamos el archivo JavaScript -->
+    <script src="atm.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Atención en la Universidad</h1>
+
+    <div>
+        <label for="cedula">Número de cédula:</label>
+        <input type="text" id="cedula" required>
+        <br><br>
+
+        <label for="tipo-atencion">Tipo de atención:</label>
+        <select id="tipo-atencion">
+            <option value="llamada">Llamada telefónica</option>
+            <option value="asesoria">Asesoría</option>
+        </select>
+        <br><br>
+
+        <div id="asesoria-tipo" style="display: none;">
+            <label for="tipo-asesoria">Tipo de asesoría:</label>
+            <select id="tipo-asesoria">
+                <option value="estudiante">Estudiante</option>
+                <option value="directivo">Directivo</option>
+            </select>
+            <br><br>
+        </div>
+
+        <button id="registrarAtencion">Registrar Atención</button>
+        <button id="transferir">Transferir a Llamada Telefónica</button>
+    </div>
+
+    <div id="resultado"></div>
+    <div id="estadisticas"></div>
+
+</body>
+</html>
+
